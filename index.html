@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#09030f">
+<meta name="description" content="HAVOC — dream it, prompt it, create it.">
+<title>HAVOC — Dream it. Prompt it.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#" aria-label="HAVOC home">HAVOC<span>✦</span></a>
+  <nav><a class="active" href="#home">Home</a><a href="#create">Create</a><a href="#stats">Stats</a><a href="#premium">Premium</a></nav>
+  <div class="online"><i></i> HAVOC IS LIVE</div>
+</header>
+<main id="home">
+<section class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow"><span></span> YOUR IDEAS. NO LIMITS.</div>
+    <h1>MAKE<br><em>WAVES.</em></h1>
+    <p class="tagline">DREAM IT. PROMPT IT. <b>HAVOC IT.</b></p>
+    <p class="intro">One prompt. A whole universe of possibilities. Create images, original songs, and videos from your imagination.</p>
+    <a class="primary" href="#create">START CREATING <span>↗</span></a>
+    <div class="micro">BUILT FOR BIG IDEAS <span>✦</span> POWERED BY YOU</div>
+  </div>
+  <div class="hero-art" role="img" aria-label="Black dog with purple spots, purple underside and glowing gold-red eyes"></div>
+  <div class="dog-caption"><span>THE HAVOC GUARDIAN</span><b>UNLEASH YOUR IMAGINATION</b></div>
+</section>
+<section class="create-section" id="create">
+  <div class="section-head"><div><div class="eyebrow">THE CREATION LAB</div><h2>WHAT WILL YOU <em>MAKE?</em></h2></div><p>Choose your canvas. Describe your vision.</p></div>
+  <div class="creator">
+    <div class="type-tabs" role="group" aria-label="Creation type">
+      <button class="type-tab selected" data-type="image">▧ <span>IMAGE</span></button>
+      <button class="type-tab" data-type="song">♫ <span>SONG</span></button>
+      <button class="type-tab" data-type="video">▷ <span>VIDEO</span></button>
+    </div>
+    <label class="prompt-label" for="prompt">YOUR PROMPT</label>
+    <textarea id="prompt" placeholder="Describe what you're imagining..."></textarea>
+    <div class="create-actions"><span id="type-hint">Turn your imagination into an image.</span><button id="createBtn" class="primary">CREATE WITH HAVOC <span>✦</span></button></div>
+    <div id="result" class="result" aria-live="polite">Your creations will appear here when an AI generation provider is connected.</div>
+  </div>
+  <div class="feature-grid">
+    <article><div class="feature-icon">▧</div><h3>IMAGE STUDIO</h3><p>Bring characters, worlds, and wild ideas to life.</p></article>
+    <article><div class="feature-icon">♫</div><h3>MUSIC STUDIO</h3><p>Make original sounds, beats, and songs from a prompt.</p></article>
+    <article><div class="feature-icon">▷</div><h3>VIDEO STUDIO</h3><p>Turn a scene in your head into a moving story.</p></article>
+  </div>
+</section>
+<section class="stats-section" id="stats">
+  <div><div class="eyebrow">THE HAVOC COMMUNITY</div><h2>SMALL START. <em>BIG ENERGY.</em></h2></div>
+  <div class="stats-grid"><article><strong id="totalVisits">—</strong><span>TOTAL VISITS</span></article><article><strong id="todayVisits">—</strong><span>VISITS TODAY</span></article><article><strong>∞</strong><span>IDEAS TO CREATE</span></article></div>
+  <p class="stats-note">Visit counts are recorded by this website's server. They are page visits, not a count of unique people.</p>
+</section>
+<section class="premium" id="premium">
+  <div><div class="eyebrow">LEVEL UP YOUR CREATIONS</div><h2>GO <em>HAVOC PRO.</em></h2><p>Get ready for more room to create. Subscription checkout can be switched on when you connect your Stripe account and choose your price.</p></div>
+  <button id="premiumBtn" class="primary">GET PRO <span>↗</span></button>
+</section>
+<footer><a class="brand" href="#">HAVOC<span>✦</span></a><span>DREAM IT. PROMPT IT. HAVOC IT.</span><span>© <span id="year"></span> HAVOC</span></footer>
+</main>
+<script src="/app.js"></script>
+</body></html>
